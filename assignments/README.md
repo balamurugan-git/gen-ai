@@ -1,7 +1,7 @@
 # Assignment Tracker
 |**S.No**|**Assignments**|**Status**|**Link**|
 |-----|-----|-----|-----|
-|1|Python Basics - Data Structure|In-progress|[python_data_structure](/assignments/python_basics/python_data_structure.ipynb)
+|1|Python Basics - Data Structure|Completed|[python_data_structure](/assignments/python_basics/python_data_structure.ipynb)
 |2|Pandas|Yet to start||
 |3|NumPy|Yet to start||
 |4|Matplotlib|Yet to start||
