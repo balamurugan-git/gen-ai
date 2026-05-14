@@ -1,0 +1,74 @@
+<svg width="700" height="290" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="700" height="290" fill="#fdf9f0" rx="10"/>
+  <text x="350" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">Traditional NN vs RNN — Parameter Sharing</text>
+
+  <!-- Traditional NN left -->
+  <rect x="20" y="45" width="300" height="220" rx="10" fill="#fdebd0" stroke="#f0b27a" stroke-width="2"/>
+  <text x="170" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#d35400">Traditional Neural Network</text>
+
+  <!-- Input layer -->
+  <circle cx="70" cy="100" r="18" fill="#e74c3c"/><text x="70" y="105" text-anchor="middle" font-size="10" fill="white">X₁</text>
+  <circle cx="70" cy="150" r="18" fill="#e74c3c"/><text x="70" y="155" text-anchor="middle" font-size="10" fill="white">X₂</text>
+  <circle cx="70" cy="200" r="18" fill="#e74c3c"/><text x="70" y="205" text-anchor="middle" font-size="10" fill="white">X₃</text>
+
+  <!-- Hidden -->
+  <circle cx="170" cy="120" r="18" fill="#8e44ad"/><text x="170" y="125" text-anchor="middle" font-size="9" fill="white">H₁</text>
+  <circle cx="170" cy="180" r="18" fill="#8e44ad"/><text x="170" y="185" text-anchor="middle" font-size="9" fill="white">H₂</text>
+
+  <!-- Output -->
+  <circle cx="270" cy="150" r="18" fill="#27ae60"/><text x="270" y="155" text-anchor="middle" font-size="9" fill="white">Out</text>
+
+  <!-- Connections - all different weights -->
+  <line x1="88" y1="100" x2="152" y2="124" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="88" y1="100" x2="152" y2="177" stroke="#3498db" stroke-width="1.5"/>
+  <line x1="88" y1="150" x2="152" y2="124" stroke="#9b59b6" stroke-width="1.5"/>
+  <line x1="88" y1="150" x2="152" y2="177" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="88" y1="200" x2="152" y2="124" stroke="#1abc9c" stroke-width="1.5"/>
+  <line x1="88" y1="200" x2="152" y2="177" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="188" y1="120" x2="252" y2="148" stroke="#555" stroke-width="1.5"/>
+  <line x1="188" y1="180" x2="252" y2="152" stroke="#555" stroke-width="1.5"/>
+
+  <text x="170" y="240" text-anchor="middle" font-size="10" fill="#c0392b">Each weight is unique (W₁,W₂,W₃...Wₙ)</text>
+  <text x="170" y="255" text-anchor="middle" font-size="10" fill="#c0392b">No sharing → huge param count</text>
+
+  <!-- RNN right -->
+  <rect x="380" y="45" width="300" height="220" rx="10" fill="#eafaf1" stroke="#a9dfbf" stroke-width="2"/>
+  <text x="530" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e8449">Recurrent Neural Network</text>
+
+  <!-- RNN cells -->
+  <rect x="410" y="115" width="50" height="40" rx="7" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="435" y="140" text-anchor="middle" font-size="11" fill="white">RNN</text>
+  <rect x="490" y="115" width="50" height="40" rx="7" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="515" y="140" text-anchor="middle" font-size="11" fill="white">RNN</text>
+  <rect x="570" y="115" width="50" height="40" rx="7" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="595" y="140" text-anchor="middle" font-size="11" fill="white">RNN</text>
+
+  <!-- Shared weight label on arrows -->
+  <line x1="460" y1="135" x2="488" y2="135" stroke="#e67e22" stroke-width="2.5" marker-end="url(#arnn)"/>
+  <line x1="540" y1="135" x2="568" y2="135" stroke="#e67e22" stroke-width="2.5" marker-end="url(#arnn)"/>
+  <text x="474" y="128" text-anchor="middle" font-size="9" fill="#e67e22">W</text>
+  <text x="554" y="128" text-anchor="middle" font-size="9" fill="#e67e22">W</text>
+  <text x="435" y="110" text-anchor="middle" font-size="9" fill="#2980b9">W</text>
+  <text x="515" y="110" text-anchor="middle" font-size="9" fill="#2980b9">W</text>
+  <text x="595" y="110" text-anchor="middle" font-size="9" fill="#2980b9">W</text>
+
+  <!-- Inputs -->
+  <text x="435" y="175" text-anchor="middle" font-size="10" fill="#555">X₁</text>
+  <text x="515" y="175" text-anchor="middle" font-size="10" fill="#555">X₂</text>
+  <text x="595" y="175" text-anchor="middle" font-size="10" fill="#555">X₃</text>
+  <line x1="435" y1="170" x2="435" y2="157" stroke="#555" stroke-width="1.5" marker-end="url(#arnn2)"/>
+  <line x1="515" y1="170" x2="515" y2="157" stroke="#555" stroke-width="1.5" marker-end="url(#arnn2)"/>
+  <line x1="595" y1="170" x2="595" y2="157" stroke="#555" stroke-width="1.5" marker-end="url(#arnn2)"/>
+
+  <text x="530" y="240" text-anchor="middle" font-size="10" fill="#1e8449">Same W and b shared across all steps</text>
+  <text x="530" y="255" text-anchor="middle" font-size="10" fill="#1e8449">Fewer params → more efficient</text>
+
+  <defs>
+    <marker id="arnn" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#e67e22"/>
+    </marker>
+    <marker id="arnn2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

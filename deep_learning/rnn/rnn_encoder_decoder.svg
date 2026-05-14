@@ -1,0 +1,65 @@
+<svg width="700" height="300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="700" height="300" fill="#fafafa" rx="10"/>
+  <text x="350" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">RNN Encoder–Decoder (Seq2Seq Unaligned)</text>
+
+  <!-- ENCODER section -->
+  <rect x="20" y="45" width="300" height="200" rx="10" fill="#eaf4fb" stroke="#aed6f1" stroke-width="2"/>
+  <text x="170" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a5276">ENCODER</text>
+
+  <!-- Encoder inputs -->
+  <rect x="40" y="80" width="50" height="35" rx="6" fill="#3498db"/><text x="65" y="103" text-anchor="middle" font-size="11" fill="white">"Je"</text>
+  <rect x="100" y="80" width="50" height="35" rx="6" fill="#3498db"/><text x="125" y="103" text-anchor="middle" font-size="11" fill="white">"suis"</text>
+  <rect x="160" y="80" width="60" height="35" rx="6" fill="#3498db"/><text x="190" y="103" text-anchor="middle" font-size="11" fill="white">"étudiant"</text>
+  <!-- hidden enc -->
+  <rect x="40" y="135" width="50" height="35" rx="6" fill="#e74c3c"/><text x="65" y="157" text-anchor="middle" font-size="11" fill="white">H₁</text>
+  <rect x="100" y="135" width="50" height="35" rx="6" fill="#c0392b"/><text x="125" y="157" text-anchor="middle" font-size="11" fill="white">H₂</text>
+  <rect x="160" y="135" width="60" height="35" rx="6" fill="#922b21"/><text x="190" y="157" text-anchor="middle" font-size="11" fill="white">H₃ (ctx)</text>
+  <!-- arrows enc -->
+  <line x1="65" y1="115" x2="65" y2="133" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="125" y1="115" x2="125" y2="133" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="190" y1="115" x2="190" y2="133" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="92" y1="152" x2="98" y2="152" stroke="#e67e22" stroke-width="2" marker-end="url(#aeo)"/>
+  <line x1="152" y1="152" x2="158" y2="152" stroke="#e67e22" stroke-width="2" marker-end="url(#aeo)"/>
+
+  <!-- Context vector -->
+  <rect x="75" y="195" width="120" height="35" rx="8" fill="#8e44ad" stroke="#6c3483" stroke-width="2"/>
+  <text x="135" y="217" text-anchor="middle" font-size="12" fill="white">Context Vector</text>
+  <line x1="190" y1="172" x2="145" y2="193" stroke="#8e44ad" stroke-width="2" marker-end="url(#aep)"/>
+
+  <!-- Arrow to decoder -->
+  <line x1="320" y1="212" x2="378" y2="212" stroke="#8e44ad" stroke-width="3" marker-end="url(#aep)"/>
+  <text x="350" y="206" text-anchor="middle" font-size="10" fill="#8e44ad">context</text>
+
+  <!-- DECODER section -->
+  <rect x="380" y="45" width="300" height="200" rx="10" fill="#eafaf1" stroke="#a9dfbf" stroke-width="2"/>
+  <text x="530" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e8449">DECODER</text>
+
+  <!-- Decoder hidden -->
+  <rect x="400" y="135" width="55" height="35" rx="6" fill="#27ae60"/><text x="427" y="157" text-anchor="middle" font-size="10" fill="white">H₁'</text>
+  <rect x="465" y="135" width="55" height="35" rx="6" fill="#1e8449"/><text x="492" y="157" text-anchor="middle" font-size="10" fill="white">H₂'</text>
+  <rect x="530" y="135" width="55" height="35" rx="6" fill="#196f3d"/><text x="557" y="157" text-anchor="middle" font-size="10" fill="white">H₃'</text>
+  <!-- Decoder output -->
+  <rect x="400" y="80" width="55" height="35" rx="6" fill="#2ecc71"/><text x="427" y="103" text-anchor="middle" font-size="11" fill="white">"I"</text>
+  <rect x="465" y="80" width="55" height="35" rx="6" fill="#2ecc71"/><text x="492" y="103" text-anchor="middle" font-size="11" fill="white">"am"</text>
+  <rect x="530" y="80" width="55" height="35" rx="6" fill="#2ecc71"/><text x="557" y="103" text-anchor="middle" font-size="11" fill="white">"student"</text>
+  <!-- arrows dec -->
+  <line x1="427" y1="133" x2="427" y2="117" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="492" y1="133" x2="492" y2="117" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="557" y1="133" x2="557" y2="117" stroke="#555" stroke-width="1.5" marker-end="url(#ae)"/>
+  <line x1="457" y1="152" x2="463" y2="152" stroke="#e67e22" stroke-width="2" marker-end="url(#aeo)"/>
+  <line x1="522" y1="152" x2="528" y2="152" stroke="#e67e22" stroke-width="2" marker-end="url(#aeo)"/>
+
+  <text x="350" y="275" text-anchor="middle" font-size="11" fill="#666">French → English Translation (Google Translate style)</text>
+
+  <defs>
+    <marker id="ae" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#555"/>
+    </marker>
+    <marker id="aeo" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#e67e22"/>
+    </marker>
+    <marker id="aep" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#8e44ad"/>
+    </marker>
+  </defs>
+</svg>
