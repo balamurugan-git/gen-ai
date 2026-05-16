@@ -11,3 +11,17 @@ _____
 - LLM Engineers (LLM fine tuning) - ML fundamentals required
 - LLM using - ML high level idea required
 - Research - creating new LLM - deep knowledge on deeplearning, ML
+
+### MLOps
+
+Data Collection
+Data pre-processing
+    EDA
+    Update missing value
+    Feature Scaling
+        Standarization
+        Normalization
+
+Model selection
+Training
+Testing
