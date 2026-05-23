@@ -52,6 +52,6 @@ GAN Generative Adversarial Network [link](https://developers.google.com/machine-
     Sematic Kernal
 
 
-Reference:
+Reference: [identify the resource URLs]
 
 
