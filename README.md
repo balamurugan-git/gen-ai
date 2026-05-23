@@ -25,3 +25,33 @@ Data pre-processing
 Model selection
 Training
 Testing
+
+### Deep learning
+
+ANN Artifical Neural Network
+RNN Recurrent Neural Network
+CNN Convolution Neural Network
+GAN Generative Adversarial Network [link](https://developers.google.com/machine-learning/gan/gan_structure)
+    Generator ANN
+    Discriminator ANN
+
+
+
+[Machine Learning](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
+
+
+
+### LLM Framework
+- Single agent
+    Langchain
+    LamaIndex
+
+- Multi agent
+    LangGraph
+    CrewAI
+    Sematic Kernal
+
+
+Reference:
+
+
