@@ -52,6 +52,19 @@ GAN Generative Adversarial Network [link](https://developers.google.com/machine-
     Sematic Kernal
 
 
-Reference: [identify the resource URLs]
+Reference: [Lanhchain](https://docs.langchain.com/oss/python/langchain/overview)
+
+[Hanging-face - google-bert](https://huggingface.co/google-bert/bert-base-uncased)
+Hugging-face - bala.sbm.kk@gmail.com - h99
 
 
+Transformer
+[Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+[Annotated Transformer (new version)](https://nlp.seas.harvard.edu/annotated-transformer/)
+
+MLP (Multilayer Perceptron)
+[d2l](https://d2l.ai/chapter_multilayer-perceptrons/mlp.html)
+[datacamp](https://www.datacamp.com/tutorial/multilayer-perceptrons-in-machine-learning)
+
+Dive into Deep learning - https://c.d2l.ai/gtc2020/
+https://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/
