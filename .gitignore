@@ -40,3 +40,6 @@ coverage.xml
 # OS
 .DS_Store
 Thumbs.db
+
+# exclude the bert trained model
+deep_learning/transformer/best_bert_healthcare.pt
