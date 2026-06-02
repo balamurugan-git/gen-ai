@@ -68,3 +68,46 @@ MLP (Multilayer Perceptron)
 
 Dive into Deep learning - https://c.d2l.ai/gtc2020/
 https://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/
+
+
+
+RAG
+- Basic RAG
+- Graph RAG
+- Agentic RAG
+
+
+Retrieval
+- Dot product
+- cosine similarity
+- manhattan different
+
+
+Vector DB
+- FAISS (in memor vector DB)
+- Chroma DB
+- pincone DB
+- qdarant DB
+
+enterprise - avoid standalone vector DB
+
+- Elastic Search (Azure AI Search)
+
+Assignment:
+Data source?? - in project - prepare word document (4 to 5 lines)
+
+
+Data Team
+- Data collection
+- Data extraction
+- Chunking
+- Embedding
+- Vector DB
+
+Agent Team
+- API
+- Agent
+- Langchain
+- Connect to
+    - Vector DB
+    - Tools/memory
