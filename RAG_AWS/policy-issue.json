@@ -1,0 +1,1 @@
+{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":"arn:aws:iam::825187895072:user/rag-developer"},"Action":"es:*","Resource":"arn:aws:es:us-east-1:825187895072:domain/rag-vector-domain-11/*"}]}
